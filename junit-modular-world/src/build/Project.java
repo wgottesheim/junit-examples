@@ -43,9 +43,9 @@ record Project() {
     //
     // download main and test dependencies
     //
-    String platformVersion = "1.13.1";
-    String jupiterVersion = "5.13.1";
-    String vintageVersion = "5.13.1";
+    String platformVersion = "1.13.3";
+    String jupiterVersion = "5.13.3";
+    String vintageVersion = "5.13.3";
     get("lib", "org.junit.platform", "junit-platform-commons", platformVersion);
     get("lib", "org.junit.platform", "junit-platform-console", platformVersion);
     get("lib", "org.junit.platform", "junit-platform-engine", platformVersion);
