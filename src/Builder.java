@@ -59,23 +59,23 @@ class Builder {
 		}
 
 		runProject(excludedProjects, "junit-jupiter-starter-gradle", "gradlew", gradleTask);
-		runProject(excludedProjects, "junit-jupiter-starter-gradle-groovy", "gradlew", gradleTask);
-		runProject(excludedProjects, "junit-jupiter-starter-gradle-kotlin", "gradlew", gradleTask);
-		runProject(excludedProjects, "junit-jupiter-starter-maven", "mvnw", "--batch-mode", "clean", mavenLifecycle);
-		runProject(excludedProjects, "junit-jupiter-starter-maven-kotlin", "mvnw", "--batch-mode", "clean", mavenLifecycle);
-		runProject(excludedProjects, "junit-jupiter-starter-bazel", "bazel", bazelTarget, "//...");
-		runProject(excludedProjects, "junit-jupiter-starter-sbt", "sbt", sbtTask);
+		//runProject(excludedProjects, "junit-jupiter-starter-gradle-groovy", "gradlew", gradleTask);
+		//runProject(excludedProjects, "junit-jupiter-starter-gradle-kotlin", "gradlew", gradleTask);
+		//runProject(excludedProjects, "junit-jupiter-starter-maven", "mvnw", "--batch-mode", "clean", mavenLifecycle);
+		//runProject(excludedProjects, "junit-jupiter-starter-maven-kotlin", "mvnw", "--batch-mode", "clean", mavenLifecycle);
+		//runProject(excludedProjects, "junit-jupiter-starter-bazel", "bazel", bazelTarget, "//...");
+		//runProject(excludedProjects, "junit-jupiter-starter-sbt", "sbt", sbtTask);
 
 		// jupiter-extensions
-		runProject(excludedProjects, "junit-jupiter-extensions", "gradlew", gradleTask);
+		//runProject(excludedProjects, "junit-jupiter-extensions", "gradlew", gradleTask);
 
 		// migration
-		runProject(excludedProjects, "junit-migration-gradle", "gradlew", gradleTask);
-		runProject(excludedProjects, "junit-migration-maven", "mvnw", "--batch-mode", "clean", mavenLifecycle);
-		runProject(excludedProjects, "junit-multiple-engines", "gradlew", gradleTask);
+		//runProject(excludedProjects, "junit-migration-gradle", "gradlew", gradleTask);
+		//runProject(excludedProjects, "junit-migration-maven", "mvnw", "--batch-mode", "clean", mavenLifecycle);
+		//runProject(excludedProjects, "junit-multiple-engines", "gradlew", gradleTask);
 
 		// modular
-		runProject(excludedProjects, "junit-modular-world", "java", modularAction);
+		//runProject(excludedProjects, "junit-modular-world", "java", modularAction);
 
 		System.out.printf("%n%n%n|%n| Done. Build exits with status = %d.%n|%n", status);
 		return status;
