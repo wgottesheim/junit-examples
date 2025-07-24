@@ -33,7 +33,6 @@ jobs:
         run: ./gradlew cleanTest test --rerun-tasks
       - name: Publish Test Results
         uses: EnricoMi/publish-unit-test-result-action@v2.20.0
-          uses: EnricoMi/publish-unit-test-result-action@v2
           if: (!cancelled())
           with:
             files: |
