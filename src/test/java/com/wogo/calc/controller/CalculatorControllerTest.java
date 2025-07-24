@@ -2,6 +2,7 @@
 // Calculator Controller Tests
 package com.wogo.calc.controller;
 
+import com.wogo.calc.controller.CalculatorController;
 import com.wogo.calc.service.CalculatorService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,7 +15,7 @@ import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-@WebMvcTest(CalculatorController.class)
+@WebMvcTest(controllers = CalculatorController.class)
 class CalculatorControllerTest {
 
     @Autowired
