@@ -38,4 +38,18 @@ class CalculatorTests {
 		assertEquals(expectedResult, calculator.add(first, second),
 				() -> first + " + " + second + " should equal " + expectedResult);
 	}
+	
+	@ParameterizedTest(name = "{0} - {1} = {2}")
+	@CsvSource({
+			"0,    1,   -1",
+			"1,    2,   -1",
+			"100,  51, 49",
+			"923,  72, 851"
+	})
+	void subtract(int first, int second, int expectedResult) {
+		Calculator calculator = new Calculator();
+		assertEquals(expectedResult, calculator.subtract(first, second),
+				() -> first + " + " + second + " should equal " + expectedResult);
+	}
+	
 }
