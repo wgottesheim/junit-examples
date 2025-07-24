@@ -8,7 +8,7 @@
  * https://www.eclipse.org/legal/epl-v20.html
  */
 
-package com.example.project;
+package com.wogo.calc;
 
 public class Calculator {
 
@@ -26,5 +26,15 @@ public class Calculator {
 	}
 
 
+    public int multiply(int a, int b) {
+        return a * b;
+    }
+
+    public int divide(int a, int b) {
+        if (b == 0) {
+            throw new ArithmeticException("Division by zero is not allowed");
+        }
+        return a / b;
+    }
 
 }

@@ -8,7 +8,7 @@
  * https://www.eclipse.org/legal/epl-v20.html
  */
 
-package com.example.project;
+package com.wogo.calc;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -16,6 +16,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+
+import com.wogo.calc.Calculator;
 
 class CalculatorTests {
 
@@ -38,7 +40,7 @@ class CalculatorTests {
 		assertEquals(expectedResult, calculator.add(first, second),
 				() -> first + " + " + second + " should equal " + expectedResult);
 	}
-	
+
 	@ParameterizedTest(name = "{0} - {1} = {2}")
 	@CsvSource({
 			"0,    1,   -1",
