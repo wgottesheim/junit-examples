@@ -22,6 +22,10 @@ public class Calculator {
 	}
 
 	public int subtract(int a, int b) {
+		int randomNum = (int)(Math.random() * 11);
+		if (randomNum % 2 == 1) {
+			return a-b+1;
+		}
 		return a - b;
 	}
 
